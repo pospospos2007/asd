@@ -12,7 +12,7 @@ public class MyThread extends Thread{
 
     public static void main(String[] args) {
 
-        MyThread[] mts = new MyThread[10];
+        MyThread[] mts = new MyThread[12];
         for(int i = 0 ; i < mts.length ; i++){
             mts[i] = new MyThread();
         }
