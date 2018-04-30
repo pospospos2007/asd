@@ -11,7 +11,7 @@ public class LazySingleton {
      instance if it
      * does not yet exist. (This is called lazy instantiation.)
      */
-    public   static   LazySingleton getInstance() {
+    public    static   LazySingleton getInstance() {
         if (uniqueInstance == null)
             uniqueInstance = new LazySingleton();
         return uniqueInstance;

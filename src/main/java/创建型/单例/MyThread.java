@@ -7,12 +7,12 @@ public class MyThread extends Thread{
 
     @Override
     public void run() {
-        System.out.println(LazySingleton.getInstance().hashCode());
+        System.out.println(ThreadSafeLazySingleton.getInstance().hashCode());
     }
 
     public static void main(String[] args) {
 
-        MyThread[] mts = new MyThread[12];
+        MyThread[] mts = new MyThread[100];
         for(int i = 0 ; i < mts.length ; i++){
             mts[i] = new MyThread();
         }
